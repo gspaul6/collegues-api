@@ -16,6 +16,17 @@ public class Collegue {
 		return matricule;
 	}
 
+	public Collegue(String matricule, String nom, String prenoms, String email, String dateDeNaissance,
+			String photoUrl) {
+		super();
+		this.matricule = matricule;
+		this.nom = nom;
+		this.prenoms = prenoms;
+		this.email = email;
+		this.dateDeNaissance = dateDeNaissance;
+		this.photoUrl = photoUrl;
+	}
+
 	/**
 	 * @param matricule
 	 *            the matricule to set

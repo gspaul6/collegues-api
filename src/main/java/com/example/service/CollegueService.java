@@ -11,18 +11,25 @@ import com.example.entite.Collegue;
 
 public class CollegueService {
 	private Map<String, Collegue> data = new HashMap<>();
-	public Collegue collegue = new Collegue();
 
 	public CollegueService() {
 		// TODO alimenter data avec des données fictives
 		// Pour générer un matricule : `UUID.randomUUID().toString()`
+		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Marty", "Nicolas",
+				"MartyNicolas@gmail.com", "18/12/1987", "img1"));
+		this.savingColleguesMethod(
+				new Collegue(UUID.randomUUID().toString(), "Boss", "Hugo", "BossHugo@gmail.com", "12/12/1997", "img2"));
+		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Tikal", "Tikka", "TikalTikka@gmail.com",
+				"03/12/1994", "img3"));
+		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Polinski", "Nicolas",
+				"PolinskiNicolas@gmail.com", "10/06/1996", "img4"));
+		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Russe", "Ygurpratap",
+				"RusseYgurpratap@gmail.com", "18/12/1987", "img5"));
 
-		collegue.setMatricule(UUID.randomUUID().toString());
-		this.data.put(collegue.getMatricule(), collegue);
 	}
 
-	public Collegue savingColleguesMethod() {
-		return this.data.put(UUID.randomUUID().toString(), collegue);
+	public void savingColleguesMethod(Collegue collegue) {
+		this.data.put(collegue.getMatricule(), collegue);
 	}
 
 	public Map<String, Collegue> getData() {
@@ -44,6 +51,7 @@ public class CollegueService {
 
 			}
 		}
+
 		return listCollegue;
 	}
 }
@@ -54,5 +62,7 @@ public class CollegueService {
  * 
  * // using values() for iteration over keys for (String name : data.values())
  * System.out.println("value: " + name);
+ * 
+ * another methos this.data.values().stream(){coleg->});
  * 
  */
