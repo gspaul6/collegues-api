@@ -32,14 +32,6 @@ public class CollegueService {
 		this.data.put(collegue.getMatricule(), collegue);
 	}
 
-	public Map<String, Collegue> getData() {
-		return data;
-	}
-
-	public void setData(Map<String, Collegue> data) {
-		this.data = data;
-	}
-
 	public List<Collegue> rechercherParNom(String nomRecherche) {
 		List<Collegue> listCollegue = new ArrayList<>(this.data.values());
 		Iterator<Collegue> itrListCollegue = listCollegue.iterator();

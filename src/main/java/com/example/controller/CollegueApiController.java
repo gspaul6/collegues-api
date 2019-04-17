@@ -23,7 +23,7 @@ import com.example.service.CollegueService;
 
 @RestController
 // Ici cette classe va répondre aux requêtes `/exemples`
-@RequestMapping("/collegue")
+@RequestMapping("/collegues")
 public class CollegueApiController {
 	private CollegueService serviceOfCollegue = new CollegueService();
 
