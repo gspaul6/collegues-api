@@ -1,12 +1,14 @@
 package com.example.entite;
 
+import java.time.LocalDate;
+
 public class Collegue {
 
 	private String matricule;
 	private String nom;
 	private String prenoms;
 	private String email;
-	private String dateDeNaissance;
+	private LocalDate dateDeNaissance;
 	private String photoUrl;
 
 	/**
@@ -16,10 +18,23 @@ public class Collegue {
 		return matricule;
 	}
 
-	public Collegue(String matricule, String nom, String prenoms, String email, String dateDeNaissance,
+	public Collegue() {
+	}
+
+	public Collegue(String matricule, String nom, String prenoms, String email, LocalDate dateDeNaissance,
 			String photoUrl) {
 		super();
 		this.matricule = matricule;
+		this.nom = nom;
+		this.prenoms = prenoms;
+		this.email = email;
+		this.dateDeNaissance = dateDeNaissance;
+		this.photoUrl = photoUrl;
+	}
+
+	public Collegue(String nom, String prenoms, String email, LocalDate dateDeNaissance, String photoUrl) {
+		super();
+
 		this.nom = nom;
 		this.prenoms = prenoms;
 		this.email = email;
@@ -83,7 +98,7 @@ public class Collegue {
 	/**
 	 * @return the dateDeNaissance
 	 */
-	public String getDateDeNaissance() {
+	public LocalDate getDateDeNaissance() {
 		return dateDeNaissance;
 	}
 
@@ -91,7 +106,7 @@ public class Collegue {
 	 * @param dateDeNaissance
 	 *            the dateDeNaissance to set
 	 */
-	public void setDateDeNaissance(String dateDeNaissance) {
+	public void setDateDeNaissance(LocalDate dateDeNaissance) {
 		this.dateDeNaissance = dateDeNaissance;
 	}
 
