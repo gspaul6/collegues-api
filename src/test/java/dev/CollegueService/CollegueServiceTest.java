@@ -4,24 +4,25 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.entite.Collegue;
 import com.example.exception.CollegueInvalidException;
 import com.example.service.CollegueService;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = CollegueService.class)
 public class CollegueServiceTest {
 	private static final Logger LOG = LoggerFactory.getLogger(CollegueServiceTest.class);
-	private CollegueService serviceOfCollegue;
 
-	@Before
-	public void init() {
-		LOG.info("Etant donné, une instance de CollegueSevice");
-		serviceOfCollegue = new CollegueService();
-	}
+	@Autowired
+	private CollegueService serviceOfCollegue;
 
 	@Test(expected = CollegueInvalidException.class)
 	public void testThelengthForNom() {
