@@ -86,6 +86,43 @@ public class CollegueService {
 
 	}
 
+	public Collegue modifierEmail(String matricule, String email) throws CollegueNonTrouveException {
+
+		// TODO retourner une exception `CollegueNonTrouveException`
+		// si le matricule ne correspond à aucun collègue
+		Collegue collegueModifieEmail = Optional.ofNullable(this.data.get(matricule))
+				.orElseThrow(CollegueNonTrouveException::new);
+		// Vérifier que l'email a au moins 3 caractères et contient `@`
+		if (!email.contains("@"))
+			throw new CollegueInvalidException("Illegal argument:Your email does not contain an @ ");
+
+		if (email.length() < 3)
+			throw new CollegueInvalidException("Illegal argument:Your email contains less then 3 characters ");
+
+		collegueModifieEmail.setEmail(email);
+
+		this.data.replace(matricule, collegueModifieEmail);
+		return collegueModifieEmail;
+
+	}
+
+	public Collegue modifierPhotoUrl(String matricule, String photoUrl) throws CollegueNonTrouveException {
+
+		// TODO retourner une exception `CollegueNonTrouveException`
+		// si le matricule ne correspond à aucun collègue
+		Collegue collegueModifiePhoto = Optional.ofNullable(this.data.get(matricule))
+				.orElseThrow(CollegueNonTrouveException::new);
+
+		if (!photoUrl.startsWith("http"))
+			throw new CollegueInvalidException("Illegal argument:Your image does not starts with http ");
+
+		collegueModifiePhoto.setPhotoUrl(photoUrl);
+
+		this.data.replace(matricule, collegueModifiePhoto);
+
+		return collegueModifiePhoto;
+	}
+
 }
 
 /*

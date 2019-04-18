@@ -2,6 +2,7 @@ package dev.CollegueService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.UUID;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -62,6 +63,38 @@ public class CollegueServiceTest {
 		Collegue newCollegue = new Collegue("Paula", "Jacky", "Pauljacky@gmail.com", LocalDate.of(2001, 12, 12),
 				"http://www.google.com");
 		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+	}
+
+	@Test(expected = CollegueInvalidException.class)
+	public void testModifierEmail() {
+		LOG.info("Etant donné, une instance de Collegue");
+		Collegue newCollegue = new Collegue("Paula", "Jacky", "Pauljacky@gmail.com", LocalDate.of(2000, 12, 12),
+				"http://www.google.com");
+		newCollegue.setMatricule(UUID.randomUUID().toString());
+		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+		this.serviceOfCollegue.modifierEmail(newCollegue.getMatricule(), "PAultimgmail.com");
+	}
+
+	@Test(expected = CollegueInvalidException.class)
+	public void testModifierEmailLength() {
+		LOG.info("Etant donné, une instance de Collegue");
+		Collegue newCollegue = new Collegue("Paula", "Jacky", "Pauljack@gmail.com", LocalDate.of(2001, 12, 12),
+				"http://www.google.com");
+
+		newCollegue.setMatricule(UUID.randomUUID().toString());
+		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+		this.serviceOfCollegue.modifierEmail(newCollegue.getMatricule(), "om");
+	}
+
+	@Test(expected = CollegueInvalidException.class)
+	public void testModifierPhotoUrl() {
+		LOG.info("Etant donné, une instance de Collegue");
+		Collegue newCollegue = new Collegue("Paula", "Jacky", "Pauljack@gmail.com", LocalDate.of(1996, 12, 12),
+				"http://www.google.com");
+
+		newCollegue.setMatricule(UUID.randomUUID().toString());
+		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+		this.serviceOfCollegue.modifierPhotoUrl(newCollegue.getMatricule(), "//google.com");
 	}
 
 }
