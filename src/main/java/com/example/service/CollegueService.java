@@ -5,8 +5,6 @@ import java.time.Period;
 import java.util.List;
 import java.util.UUID;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,23 +27,6 @@ public class CollegueService {
 	 */
 	public void setCollegueRepository(CollegueRepository collegueRepository) {
 		this.collegueRepository = collegueRepository;
-	}
-
-	@PostConstruct
-	public void init() {
-		// alimenter data avec des données fictives
-		// Pour générer un matricule : `UUID.randomUUID().toString()`
-		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Marty", "Nicolas",
-				"MartyNicolas@gmail.com", LocalDate.of(1997, 01, 01), "http://www.yahoo.com"));
-		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Boss", "Hugo", "BossHugo@gmail.com",
-				LocalDate.of(1997, 12, 12), "http://www.hotmail.com"));
-		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Tikal", "Tikka", "TikalTikka@gmail.com",
-				LocalDate.of(1994, 03, 04), "http://www.mappy.com"));
-		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Polinski", "Nicolas",
-				"PolinskiNicolas@gmail.com", LocalDate.of(1996, 12, 12), "http://www.trello.com"));
-		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Russe", "Ygurpratap",
-				"RusseYgurpratap@gmail.com", LocalDate.of(1988, 05, 06), "http://www.picachu.com"));
-
 	}
 
 	public Collegue savingColleguesMethod(Collegue collegueAjouter) {
