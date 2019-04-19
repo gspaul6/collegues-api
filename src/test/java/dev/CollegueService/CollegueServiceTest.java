@@ -2,27 +2,33 @@ package dev.CollegueService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Optional;
 import java.util.UUID;
 
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.entite.Collegue;
 import com.example.exception.CollegueInvalidException;
+import com.example.repository.CollegueRepository;
 import com.example.service.CollegueService;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = CollegueService.class)
 public class CollegueServiceTest {
 	private static final Logger LOG = LoggerFactory.getLogger(CollegueServiceTest.class);
 
-	@Autowired
 	private CollegueService serviceOfCollegue;
+
+	private CollegueRepository collegueRepository;
+
+	@Before
+	public void init() {
+		serviceOfCollegue = new CollegueService();
+		collegueRepository = Mockito.mock(CollegueRepository.class);
+		serviceOfCollegue.setCollegueRepository(collegueRepository);
+	}
 
 	@Test(expected = CollegueInvalidException.class)
 	public void testThelengthForNom() {
@@ -30,6 +36,7 @@ public class CollegueServiceTest {
 		Collegue newCollegue = new Collegue("P", "Jacky", "Pauljacky@gmail.com",
 				LocalDate.parse("1996-12-12", DateTimeFormatter.ofPattern("yyyy-MM-dd")), "http://www.google.com");
 		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+
 	}
 
 	@Test(expected = CollegueInvalidException.class)
@@ -72,7 +79,7 @@ public class CollegueServiceTest {
 		Collegue newCollegue = new Collegue("Paula", "Jacky", "Pauljacky@gmail.com", LocalDate.of(2000, 12, 12),
 				"http://www.google.com");
 		newCollegue.setMatricule(UUID.randomUUID().toString());
-		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+		Mockito.when(collegueRepository.findById(newCollegue.getMatricule())).thenReturn(Optional.of(newCollegue));
 		this.serviceOfCollegue.modifierEmail(newCollegue.getMatricule(), "PAultimgmail.com");
 	}
 
@@ -83,8 +90,10 @@ public class CollegueServiceTest {
 				"http://www.google.com");
 
 		newCollegue.setMatricule(UUID.randomUUID().toString());
-		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
-		this.serviceOfCollegue.modifierEmail(newCollegue.getMatricule(), "om");
+		// this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+		Mockito.when(collegueRepository.findById(newCollegue.getMatricule())).thenReturn(Optional.of(newCollegue));
+		this.serviceOfCollegue.modifierEmail(newCollegue.getMatricule(), "@m");
+		// Mockito.verify(collegueRepository).save(newCollegue);
 	}
 
 	@Test(expected = CollegueInvalidException.class)
@@ -94,8 +103,10 @@ public class CollegueServiceTest {
 				"http://www.google.com");
 
 		newCollegue.setMatricule(UUID.randomUUID().toString());
-		this.serviceOfCollegue.savingColleguesMethod(newCollegue);
-		this.serviceOfCollegue.modifierPhotoUrl(newCollegue.getMatricule(), "//google.com");
+
+		// this.serviceOfCollegue.savingColleguesMethod(newCollegue);
+		Mockito.when(collegueRepository.findById(newCollegue.getMatricule())).thenReturn(Optional.of(newCollegue));
+		this.serviceOfCollegue.modifierPhotoUrl(newCollegue.getMatricule(), "htt://yahoo.com");
 	}
 
 }

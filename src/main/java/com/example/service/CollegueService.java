@@ -2,26 +2,38 @@ package com.example.service;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 import java.util.UUID;
 
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.entite.Collegue;
 import com.example.exception.CollegueInvalidException;
 import com.example.exception.CollegueNonTrouveException;
+import com.example.repository.CollegueRepository;
 
 @Service
 public class CollegueService {
-	private Map<String, Collegue> data = new HashMap<>();
+	// private Map<String, Collegue> data = new HashMap<>();
 
-	public CollegueService() {
-		// TODO alimenter data avec des données fictives
+	@Autowired
+	private CollegueRepository collegueRepository;
+
+	/**
+	 * @param collegueRepository
+	 *            the collegueRepository to set
+	 */
+	public void setCollegueRepository(CollegueRepository collegueRepository) {
+		this.collegueRepository = collegueRepository;
+	}
+
+	@PostConstruct
+	public void init() {
+		// alimenter data avec des données fictives
 		// Pour générer un matricule : `UUID.randomUUID().toString()`
 		this.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Marty", "Nicolas",
 				"MartyNicolas@gmail.com", LocalDate.of(1997, 01, 01), "http://www.yahoo.com"));
@@ -64,36 +76,30 @@ public class CollegueService {
 		// générer un matricule pour ce collègue
 		// (`UUID.randomUUID().toString()`)
 		collegueAjouter.setMatricule(UUID.randomUUID().toString());
-		return this.data.put(collegueAjouter.getMatricule(), collegueAjouter);
+
+		collegueRepository.save(collegueAjouter);
+		return collegueAjouter;
+
 	}
 
 	public List<Collegue> rechercherParNom(String nomRecherche) {
-		List<Collegue> listCollegue = new ArrayList<>(this.data.values());
-		Iterator<Collegue> itrListCollegue = listCollegue.iterator();
-		while (itrListCollegue.hasNext()) {
-			Collegue nomCollegue = itrListCollegue.next();
-			if (nomCollegue.getNom().equals(nomRecherche)) {
-				listCollegue.clear();
-				listCollegue.add(nomCollegue);
 
-			}
-		}
-
-		return listCollegue;
+		return collegueRepository.findDistinctCollegueByNom(nomRecherche);
 	}
 
 	public Collegue rechercherParMatricule(String matriculeRecherche) throws CollegueNonTrouveException {
-		// TODO retourner le collègue dont le matricule est fourni
+		// retourner le collègue dont le matricule est fourni
 
-		return Optional.ofNullable(this.data.get(matriculeRecherche)).orElseThrow(CollegueNonTrouveException::new);
+		return collegueRepository.findById(matriculeRecherche).orElseThrow(CollegueNonTrouveException::new);
 
 	}
 
+	@Transactional
 	public Collegue modifierEmail(String matricule, String email) throws CollegueNonTrouveException {
 
-		// TODO retourner une exception `CollegueNonTrouveException`
+		// retourner une exception `CollegueNonTrouveException`
 		// si le matricule ne correspond à aucun collègue
-		Collegue collegueModifieEmail = Optional.ofNullable(this.data.get(matricule))
+		Collegue collegueModifieEmail = collegueRepository.findById(matricule)
 				.orElseThrow(CollegueNonTrouveException::new);
 		// Vérifier que l'email a au moins 3 caractères et contient `@`
 		if (!email.contains("@"))
@@ -104,16 +110,15 @@ public class CollegueService {
 
 		collegueModifieEmail.setEmail(email);
 
-		this.data.replace(matricule, collegueModifieEmail);
+		// collegueRepository.setCollegueInfoByEmail(email, matricule);
 		return collegueModifieEmail;
 
 	}
 
-	public Collegue modifierPhotoUrl(String matricule, String photoUrl) throws CollegueNonTrouveException {
+	@Transactional
+	public Collegue modifierPhotoUrl(String matricule, String photoUrl) {
 
-		// TODO retourner une exception `CollegueNonTrouveException`
-		// si le matricule ne correspond à aucun collègue
-		Collegue collegueModifiePhoto = Optional.ofNullable(this.data.get(matricule))
+		Collegue collegueModifiePhoto = collegueRepository.findById(matricule)
 				.orElseThrow(CollegueNonTrouveException::new);
 
 		if (!photoUrl.startsWith("http"))
@@ -121,12 +126,28 @@ public class CollegueService {
 
 		collegueModifiePhoto.setPhotoUrl(photoUrl);
 
-		this.data.replace(matricule, collegueModifiePhoto);
+		// collegueRepository.setCollegueInfoByPhotoUrl(photoUrl, matricule);
 
 		return collegueModifiePhoto;
 	}
 
 }
+
+// public List<Collegue> rechercherParNom(String nomRecherche) {
+// List<Collegue> listCollegue = new ArrayList<>(this.data.values());
+// Iterator<Collegue> itrListCollegue = listCollegue.iterator();
+// while (itrListCollegue.hasNext()) {
+// Collegue nomCollegue = itrListCollegue.next();
+// if (nomCollegue.getNom().equals(nomRecherche)) {
+// listCollegue.clear();
+// listCollegue.add(nomCollegue);
+//
+// }
+// }
+//
+//
+// return listCollegue;
+// }
 
 /*
  * another way for iterating over maps // using keySet() for iteration over keys

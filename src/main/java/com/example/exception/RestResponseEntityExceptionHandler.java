@@ -10,6 +10,11 @@ public class RestResponseEntityExceptionHandler {
 	// la méthode handleConflict est exécutée lorsqu'un contrôleur émet une
 	// exception présente
 	// dans la liste définie par l'annotation @ExceptionHandler
+	/*
+	 * 2xx=success 3xx=Redirection 4xx=error client-> { bad request ->404 (the
+	 * most common)} 5xx=error server
+	 * 
+	 */
 	@ExceptionHandler(value = { CollegueInvalidException.class })
 	protected ResponseEntity<Object> handleConflict(RuntimeException ex, WebRequest request) {
 		String bodyOfResponse = "This should be application specific for runtime exception";

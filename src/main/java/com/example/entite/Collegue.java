@@ -2,13 +2,32 @@ package com.example.entite;
 
 import java.time.LocalDate;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Collegue")
 public class Collegue {
 
+	@Id
+	@Column(name = "id")
 	private String matricule;
+
+	@Column(name = "nom")
 	private String nom;
+
+	@Column(name = "prenom")
 	private String prenoms;
+
+	@Column(name = "email")
 	private String email;
+
+	@Column(name = "dateDeNaissance")
 	private LocalDate dateDeNaissance;
+
+	@Column(name = "photoUrl")
 	private String photoUrl;
 
 	/**
