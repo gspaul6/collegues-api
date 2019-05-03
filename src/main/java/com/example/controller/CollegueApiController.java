@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,6 +34,7 @@ import com.example.service.CollegueService;
 @RestController
 // Ici cette classe va répondre aux requêtes `/exemples`
 @RequestMapping("/collegues")
+@CrossOrigin
 public class CollegueApiController {
 
 	@Autowired
@@ -65,9 +67,13 @@ public class CollegueApiController {
 	public ResponseEntity<Object> modifierEmail(@PathVariable String matricule,
 			@RequestBody CollegueModifier collegueModifier) {
 		Collegue newCollegue = null;
-		if (collegueModifier.getEmail() != null && !collegueModifier.getEmail().equals("")) {
+
+		System.out.println(newCollegue);
+
+		if (collegueModifier.getEmail() != null) {
 			newCollegue = this.serviceOfCollegue.modifierEmail(matricule, collegueModifier.getEmail());
-		} else if (collegueModifier.getPhoto() != null && !collegueModifier.getPhoto().equals("")) {
+		}
+		if (collegueModifier.getPhoto() != null) {
 			newCollegue = this.serviceOfCollegue.modifierPhotoUrl(matricule, collegueModifier.getPhoto());
 		}
 
