@@ -6,6 +6,8 @@ package com.example.repository;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import com.example.entite.Collegue;
 
@@ -16,6 +18,9 @@ import com.example.entite.Collegue;
 public interface CollegueRepository extends JpaRepository<Collegue, String> {
 
 	List<Collegue> findDistinctCollegueByNom(String lastname);
+
+	@Query("Select c.email from Collegue c where c.email=:email")
+	String findDistinctCollegueByEmail(@Param("email") String email);
 
 	// Optional<Collegue> findDistinctCollegueByMatricule(String matricule);
 

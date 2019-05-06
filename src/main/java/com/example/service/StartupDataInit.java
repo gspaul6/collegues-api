@@ -26,15 +26,20 @@ public class StartupDataInit {
 		LOG.error("hello startiiiiiinnnnnng");
 
 		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Marty", "Nicolas",
-				"MartyNicolas@gmail.com", LocalDate.of(1997, 01, 01), "http://www.yahoo.com"));
-		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Boss", "Hugo", "BossHugo@gmail.com",
-				LocalDate.of(1997, 12, 12), "http://www.hotmail.com"));
+				"martynicolas@gmail.com", LocalDate.of(1997, 01, 01),
+				"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX18400141.jpg"));
+		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Boss", "Hugo", "bosshugo@gmail.com",
+				LocalDate.of(1997, 12, 12),
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc1RCr83mpi6e0hRy6Ti-uCRCOBN_KCovDZqpxx_KHMe_iRdH9"));
 		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Tikal", "Tikka",
-				"TikalTikka@gmail.com", LocalDate.of(1994, 03, 04), "http://www.mappy.com"));
+				"tikaltikka@gmail.com", LocalDate.of(1994, 03, 04),
+				"https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png"));
 		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Polinski", "Nicolas",
-				"PolinskiNicolas@gmail.com", LocalDate.of(1996, 12, 12), "http://www.trello.com"));
+				"polinskinicolas@gmail.com", LocalDate.of(1996, 12, 12),
+				"http://www.soidergi.com/wp-content/uploads/ph/thumb-photostock-vector-elegant-bearded-man-face-in-sunglasses-vector-hipster-character-fashion-silhouette-avatar-emblem-log.jpg"));
 		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Russe", "Ygurpratap",
-				"RusseYgurpratap@gmail.com", LocalDate.of(1988, 05, 06), "http://www.picachu.com"));
+				"russeygurpratap@gmail.com", LocalDate.of(1988, 05, 06),
+				"http://www.arenawp.com/wp-content/uploads/st/thumb-stock-illustration-man-silhouette-hipster-style-vector-illustration-image.jpg"));
 
 	}
 }

@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.entite.ColPhotoMatricule;
 import com.example.entite.Collegue;
 import com.example.entite.CollegueModifier;
 import com.example.service.CollegueService;
@@ -46,13 +47,24 @@ public class CollegueApiController {
 				.collect(Collectors.toList());
 	}
 
+	// /collegues/email?email=xxx
+	@GetMapping("/email")
+	public boolean searchByEmail(@RequestParam("email") String email) throws Exception {
+		return this.serviceOfCollegue.researcheParEmail(email);
+	}
+
+	@GetMapping("/all")
+	public List<ColPhotoMatricule> searchAll() {
+
+		return this.serviceOfCollegue.researchAllCollegue();
+	}
+
 	@GetMapping("/{matricule}")
 	@ResponseBody // parser l'objet Collegues `GET /collegues/matriculeRecherche
 	public Collegue recherchermatricules(@PathVariable String matricule) throws Exception {
 		Collegue collegueWithMatriculetrouve = this.serviceOfCollegue.rechercherParMatricule(matricule);
 
 		return collegueWithMatriculetrouve;
-
 	}
 
 	@PostMapping
