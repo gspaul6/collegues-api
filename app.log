@@ -1,0 +1,4 @@
+18:04:15.094 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 11676 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+18:04:15.114 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+18:04:41.829 [restartedMain] ERROR com.example.service.StartupDataInit - hello startiiiiiinnnnnng
+18:04:42.493 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 29.31 seconds (JVM running for 47.763)
