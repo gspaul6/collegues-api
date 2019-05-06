@@ -23,7 +23,13 @@ public class RestResponseEntityExceptionHandler {
 
 	@ExceptionHandler(value = { CollegueNonTrouveException.class })
 	protected ResponseEntity<Object> conflictHandle(RuntimeException ex, WebRequest request) {
-		String bodyOfResponse = "This should be application specific, which deals with Web request ";
+		String bodyOfResponse = "Collegue doesnt exist ";
+		return ResponseEntity.status(404).body(bodyOfResponse);
+	}
+
+	@ExceptionHandler(value = { EmailNotFoundException.class })
+	protected ResponseEntity<Object> conflictHandleEmail(RuntimeException ex, WebRequest request) {
+		String bodyOfResponse = "Email does not Exist ";
 		return ResponseEntity.status(404).body(bodyOfResponse);
 	}
 

@@ -2,6 +2,7 @@ package com.example.service;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -9,9 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.example.entite.ColPhotoMatricule;
 import com.example.entite.Collegue;
 import com.example.exception.CollegueInvalidException;
 import com.example.exception.CollegueNonTrouveException;
+import com.example.exception.EmailNotFoundException;
 import com.example.repository.CollegueRepository;
 
 @Service
@@ -73,6 +76,22 @@ public class CollegueService {
 
 		return collegueRepository.findById(matriculeRecherche).orElseThrow(CollegueNonTrouveException::new);
 
+	}
+
+	public boolean researcheParEmail(String email) throws EmailNotFoundException {
+		return collegueRepository.findDistinctCollegueByEmail(email) != null;
+
+	}
+
+	public List<ColPhotoMatricule> researchAllCollegue() {
+		List<ColPhotoMatricule> collegueList = new ArrayList<>();
+		List<Collegue> allCols = collegueRepository.findAll();
+
+		for (Collegue collegue : allCols) {
+			collegueList.add(new ColPhotoMatricule(collegue.getMatricule(), collegue.getPhotoUrl()));
+		}
+
+		return collegueList;
 	}
 
 	@Transactional
