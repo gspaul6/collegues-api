@@ -23,7 +23,7 @@ public class StartupDataInit {
 	// La méthode init va être invoquée au démarrage de l'application.
 	@EventListener(ContextRefreshedEvent.class)
 	public void init() {
-		LOG.error("hello startiiiiiinnnnnng");
+		LOG.error("hello starting");
 
 		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Marty", "Nicolas",
 				"martynicolas@gmail.com", LocalDate.of(1997, 01, 01),

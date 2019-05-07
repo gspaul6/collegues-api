@@ -1,10 +1,13 @@
 package com.example.entite;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -30,6 +33,9 @@ public class Collegue {
 	@Column(name = "photoUrl")
 	private String photoUrl;
 
+	@OneToMany(mappedBy = "collegue")
+	private List<CommentaireCollegue> commentaire;
+
 	/**
 	 * @return the matricule
 	 */
@@ -38,6 +44,22 @@ public class Collegue {
 	}
 
 	public Collegue() {
+		commentaire = new ArrayList<>();
+	}
+
+	/**
+	 * @return the commentaire
+	 */
+	public List<CommentaireCollegue> getCommentaire() {
+		return commentaire;
+	}
+
+	/**
+	 * @param commentaire
+	 *            the commentaire to set
+	 */
+	public void setCommentaire(List<CommentaireCollegue> commentaire) {
+		this.commentaire = commentaire;
 	}
 
 	public Collegue(String matricule, String nom, String prenoms, String email, LocalDate dateDeNaissance,
@@ -52,6 +74,15 @@ public class Collegue {
 	}
 
 	public Collegue(String nom, String prenoms, String email, LocalDate dateDeNaissance, String photoUrl) {
+		super();
+		this.nom = nom;
+		this.prenoms = prenoms;
+		this.email = email;
+		this.dateDeNaissance = dateDeNaissance;
+		this.photoUrl = photoUrl;
+	}
+
+	public Collegue(String nom, String prenoms, LocalDate dateDeNaissance, String email, String photoUrl) {
 		super();
 
 		this.nom = nom;

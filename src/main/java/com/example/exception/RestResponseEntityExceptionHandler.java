@@ -33,4 +33,9 @@ public class RestResponseEntityExceptionHandler {
 		return ResponseEntity.status(404).body(bodyOfResponse);
 	}
 
+	@ExceptionHandler(value = { CommentaireNonTrouverException.class })
+	protected ResponseEntity<Object> conflictHandleCommentaire(RuntimeException ex, WebRequest request) {
+		String bodyOfResponse = "Commentaire does not Exist ";
+		return ResponseEntity.status(404).body(bodyOfResponse);
+	}
 }
