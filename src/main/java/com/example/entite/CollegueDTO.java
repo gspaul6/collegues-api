@@ -56,6 +56,18 @@ public class CollegueDTO {
 		this.dateDeNaissance = dateDeNaissance;
 		this.photoUrl = photoUrl;
 	}
+	public CollegueDTO(String matricule){
+		this.matricule=matricule;
+	}
+
+	public CollegueDTO(String matricule, String nom, String prenoms, String email, LocalDate dateDeNaissance, String photoUrl) {
+		this.matricule = matricule;
+		this.nom = nom;
+		this.prenoms = prenoms;
+		this.email = email;
+		this.dateDeNaissance = dateDeNaissance;
+		this.photoUrl = photoUrl;
+	}
 
 	/**
 	 * @param prenoms

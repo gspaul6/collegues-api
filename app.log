@@ -2,3 +2,75 @@
 18:04:15.114 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
 18:04:41.829 [restartedMain] ERROR com.example.service.StartupDataInit - hello startiiiiiinnnnnng
 18:04:42.493 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 29.31 seconds (JVM running for 47.763)
+23:24:31.032 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 8572 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+23:24:31.040 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+23:24:40.652 [restartedMain] ERROR com.example.service.StartupDataInit - hello startiiiiiinnnnnng
+23:24:40.855 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 10.52 seconds (JVM running for 12.629)
+23:35:37.891 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 9220 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+23:35:37.899 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+23:35:49.351 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+23:35:49.618 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 12.737 seconds (JVM running for 14.884)
+23:49:04.953 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 9220 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+23:49:04.953 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+23:49:08.674 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+23:49:08.758 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 3.961 seconds (JVM running for 814.027)
+23:52:40.420 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 9220 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+23:52:40.420 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+23:52:41.949 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+23:52:41.998 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.69 seconds (JVM running for 1027.265)
+23:54:34.139 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 9220 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+23:54:34.143 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+23:54:35.395 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+23:54:35.439 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.394 seconds (JVM running for 1140.705)
+00:03:29.061 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 9220 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+00:03:29.061 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+00:03:30.213 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+00:03:30.265 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.361 seconds (JVM running for 1675.534)
+19:51:05.385 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+19:51:05.391 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+19:51:21.182 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+19:51:21.597 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 17.295 seconds (JVM running for 19.424)
+22:02:28.583 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:02:28.583 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:02:37.105 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:02:37.239 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 8.954 seconds (JVM running for 7895.067)
+22:06:29.586 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:06:29.586 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:06:31.911 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:06:32.016 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 2.558 seconds (JVM running for 8129.842)
+22:13:04.946 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:13:04.946 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:13:06.515 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:13:06.569 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.741 seconds (JVM running for 8524.396)
+22:13:08.976 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:13:08.976 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:13:11.004 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:13:11.089 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 2.16 seconds (JVM running for 8528.918)
+22:15:38.378 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:15:38.378 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:15:39.884 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:15:39.950 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.653 seconds (JVM running for 8677.777)
+22:15:58.370 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:15:58.370 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:15:59.676 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:15:59.741 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.429 seconds (JVM running for 8697.567)
+22:16:19.165 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:16:19.165 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:16:20.515 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:16:20.554 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.453 seconds (JVM running for 8718.381)
+22:17:08.121 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:17:08.121 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:17:09.646 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:17:09.743 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.679 seconds (JVM running for 8767.57)
+22:21:42.667 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:21:42.668 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:21:44.661 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:21:44.707 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 2.081 seconds (JVM running for 9042.534)
+22:21:52.586 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:21:52.586 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:21:53.566 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:21:53.642 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.081 seconds (JVM running for 9051.47)
+22:22:09.727 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on Genie with PID 5296 (D:\sts-bundle\collegues-api\target\classes started by Genie_singh in D:\sts-bundle\collegues-api)
+22:22:09.727 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+22:22:10.659 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+22:22:10.707 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.012 seconds (JVM running for 9068.537)

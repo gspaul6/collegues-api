@@ -19,8 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entite.ColPhotoMatricule;
 import com.example.entite.Collegue;
+import com.example.entite.CollegueDTO;
 import com.example.entite.CollegueModifier;
 import com.example.service.CollegueService;
+import com.example.utls.DtoUtils;
 
 /**
  * @author gurpr
@@ -60,17 +62,16 @@ public class CollegueApiController {
 	}
 
 	@GetMapping("/{matricule}")
-	@ResponseBody // parser l'objet Collegues `GET /collegues/matriculeRecherche
-	public Collegue recherchermatricules(@PathVariable String matricule) throws Exception {
+	public ResponseEntity<Object> recherchermatricules(@PathVariable String matricule) throws Exception {
 		Collegue collegueWithMatriculetrouve = this.serviceOfCollegue.rechercherParMatricule(matricule);
-
-		return collegueWithMatriculetrouve;
+        CollegueDTO collegueDto= DtoUtils.ToCollegueDTO(collegueWithMatriculetrouve);
+        return ResponseEntity.status(HttpStatus.OK).body(collegueDto);
 	}
 
 	@PostMapping
-	public ResponseEntity<Object> create(@RequestBody Collegue collegue) {
+	public ResponseEntity<Object> create(@RequestBody CollegueDTO collegue) {
 
-		this.serviceOfCollegue.savingColleguesMethod(collegue);
+		this.serviceOfCollegue.savingColleguesMethod(DtoUtils.ToCollegue(collegue));
 
 		return ResponseEntity.status(HttpStatus.OK).body(collegue);
 	}
@@ -78,15 +79,15 @@ public class CollegueApiController {
 	@PatchMapping(value = "/{matricule}")
 	public ResponseEntity<Object> modifierEmail(@PathVariable String matricule,
 			@RequestBody CollegueModifier collegueModifier) {
-		Collegue newCollegue = null;
+		CollegueDTO newCollegue = null;
 
 		System.out.println(newCollegue);
 
 		if (collegueModifier.getEmail() != null) {
-			newCollegue = this.serviceOfCollegue.modifierEmail(matricule, collegueModifier.getEmail());
+			newCollegue = DtoUtils.ToCollegueDTO(this.serviceOfCollegue.modifierEmail(matricule, collegueModifier.getEmail()));
 		}
 		if (collegueModifier.getPhoto() != null) {
-			newCollegue = this.serviceOfCollegue.modifierPhotoUrl(matricule, collegueModifier.getPhoto());
+			newCollegue = DtoUtils.ToCollegueDTO(this.serviceOfCollegue.modifierPhotoUrl(matricule, collegueModifier.getPhoto()));
 		}
 
 		return ResponseEntity.status(HttpStatus.OK).body(newCollegue);

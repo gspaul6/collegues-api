@@ -4,6 +4,19 @@ import java.time.LocalDateTime;
 
 public class CommentaireCollegueDTO {
 
+	
+	
+	public CommentaireCollegueDTO() {
+		super();
+	}
+
+	public CommentaireCollegueDTO(Integer id, String commentaire, LocalDateTime dateCreated) {
+		// TODO Auto-generated constructor stub
+		this.id=id;
+		this.commentaire=commentaire;
+		this.dateCreated=dateCreated;
+	}
+
 	public String getCommentaire() {
 		return commentaire;
 	}

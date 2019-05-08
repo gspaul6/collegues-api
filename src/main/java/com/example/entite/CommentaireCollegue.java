@@ -25,6 +25,18 @@ public class CommentaireCollegue {
 	@Column(name = "dateCreated")
 	private LocalDateTime dateCreated;
 
+	
+	public CommentaireCollegue() {
+		super();
+	}
+
+	public CommentaireCollegue(Integer id, String commentaire, LocalDateTime dateCreated) {
+		// TODO Auto-generated constructor stub
+		this.id=id;
+		this.commentaire=commentaire;
+		this.dateCreated=dateCreated;
+	}
+
 	/**
 	 * @return the id
 	 */

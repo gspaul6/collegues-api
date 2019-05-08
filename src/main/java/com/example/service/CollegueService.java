@@ -71,7 +71,7 @@ public class CollegueService {
 		return collegueRepository.findDistinctCollegueByNom(nomRecherche);
 	}
 
-	public Collegue rechercherParMatricule(String matriculeRecherche) throws CollegueNonTrouveException {
+	public Collegue rechercherParMatricule(String matriculeRecherche) throws CollegueNonTrouveException{
 		// retourner le collègue dont le matricule est fourni
 
 		return collegueRepository.findById(matriculeRecherche).orElseThrow(CollegueNonTrouveException::new);
