@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,7 +21,7 @@ import com.example.exception.EmailNotFoundException;
 import com.example.repository.CollegueRepository;
 
 @Service
-public class CollegueService {
+public class CollegueService implements UserDetailsService {
 	// private Map<String, Collegue> data = new HashMap<>();
 
 	@Autowired
@@ -71,7 +74,7 @@ public class CollegueService {
 		return collegueRepository.findDistinctCollegueByNom(nomRecherche);
 	}
 
-	public Collegue rechercherParMatricule(String matriculeRecherche) throws CollegueNonTrouveException{
+	public Collegue rechercherParMatricule(String matriculeRecherche) throws CollegueNonTrouveException {
 		// retourner le collègue dont le matricule est fourni
 
 		return collegueRepository.findById(matriculeRecherche).orElseThrow(CollegueNonTrouveException::new);
@@ -129,6 +132,13 @@ public class CollegueService {
 		// collegueRepository.setCollegueInfoByPhotoUrl(photoUrl, matricule);
 
 		return collegueModifiePhoto;
+	}
+
+	@Override
+	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+	if(collegueRepository.findDistinctCollegueByEmail(email) != null)
+	{
+		return null;
 	}
 
 }

@@ -1,6 +1,8 @@
 package com.example.exception;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
@@ -38,4 +40,10 @@ public class RestResponseEntityExceptionHandler {
 		String bodyOfResponse = "Commentaire does not Exist ";
 		return ResponseEntity.status(404).body(bodyOfResponse);
 	}
+
+	@ExceptionHandler(BadCredentialsException.class)
+	public ResponseEntity mauvaiseInfosConnexion(BadCredentialsException e) {
+		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+	}
+
 }
