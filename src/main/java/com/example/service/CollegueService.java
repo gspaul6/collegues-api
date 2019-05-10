@@ -7,21 +7,21 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.entite.ColPhotoMatricule;
 import com.example.entite.Collegue;
+import com.example.entite.CollegueUtilisateur;
 import com.example.exception.CollegueInvalidException;
 import com.example.exception.CollegueNonTrouveException;
 import com.example.exception.EmailNotFoundException;
 import com.example.repository.CollegueRepository;
+import com.example.utls.DtoUtils;
 
 @Service
-public class CollegueService implements UserDetailsService {
+public class CollegueService {
 	// private Map<String, Collegue> data = new HashMap<>();
 
 	@Autowired
@@ -134,13 +134,13 @@ public class CollegueService implements UserDetailsService {
 		return collegueModifiePhoto;
 	}
 
-	@Override
-	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-	if(collegueRepository.findDistinctCollegueByEmail(email) != null)
-	{
-		return null;
-	}
+	public CollegueUtilisateur loadUserByname(String email) throws UsernameNotFoundException {
+		Collegue collegueFound = collegueRepository.findCollegueByTheirEmail(email)
+				.orElseThrow(() -> new UsernameNotFoundException("Utilisateur non trouvé"));
+		CollegueUtilisateur collegueUtilisateur = DtoUtils.toCollegueUtilisateur(collegueFound);
+		return collegueUtilisateur;
 
+	}
 }
 
 // public List<Collegue> rechercherParNom(String nomRecherche) {

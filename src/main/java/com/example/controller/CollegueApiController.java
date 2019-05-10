@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -14,13 +15,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entite.ColPhotoMatricule;
 import com.example.entite.Collegue;
 import com.example.entite.CollegueDTO;
 import com.example.entite.CollegueModifier;
+import com.example.entite.CollegueUtilisateur;
 import com.example.service.CollegueService;
 import com.example.utls.DtoUtils;
 
@@ -64,11 +65,12 @@ public class CollegueApiController {
 	@GetMapping("/{matricule}")
 	public ResponseEntity<Object> recherchermatricules(@PathVariable String matricule) throws Exception {
 		Collegue collegueWithMatriculetrouve = this.serviceOfCollegue.rechercherParMatricule(matricule);
-        CollegueDTO collegueDto= DtoUtils.ToCollegueDTO(collegueWithMatriculetrouve);
-        return ResponseEntity.status(HttpStatus.OK).body(collegueDto);
+		CollegueDTO collegueDto = DtoUtils.ToCollegueDTO(collegueWithMatriculetrouve);
+		return ResponseEntity.status(HttpStatus.OK).body(collegueDto);
 	}
 
 	@PostMapping
+	@Secured("ROLE_ADMIN")
 	public ResponseEntity<Object> create(@RequestBody CollegueDTO collegue) {
 
 		this.serviceOfCollegue.savingColleguesMethod(DtoUtils.ToCollegue(collegue));
@@ -77,6 +79,7 @@ public class CollegueApiController {
 	}
 
 	@PatchMapping(value = "/{matricule}")
+	@Secured("ROLE_ADMIN")
 	public ResponseEntity<Object> modifierEmail(@PathVariable String matricule,
 			@RequestBody CollegueModifier collegueModifier) {
 		CollegueDTO newCollegue = null;
@@ -84,13 +87,22 @@ public class CollegueApiController {
 		System.out.println(newCollegue);
 
 		if (collegueModifier.getEmail() != null) {
-			newCollegue = DtoUtils.ToCollegueDTO(this.serviceOfCollegue.modifierEmail(matricule, collegueModifier.getEmail()));
+			newCollegue = DtoUtils
+					.ToCollegueDTO(this.serviceOfCollegue.modifierEmail(matricule, collegueModifier.getEmail()));
 		}
 		if (collegueModifier.getPhoto() != null) {
-			newCollegue = DtoUtils.ToCollegueDTO(this.serviceOfCollegue.modifierPhotoUrl(matricule, collegueModifier.getPhoto()));
+			newCollegue = DtoUtils
+					.ToCollegueDTO(this.serviceOfCollegue.modifierPhotoUrl(matricule, collegueModifier.getPhoto()));
 		}
 
 		return ResponseEntity.status(HttpStatus.OK).body(newCollegue);
+	}
+
+	@GetMapping("/me")
+	public ResponseEntity<Object> getUtilisateur(@RequestParam("email") String email) {
+		CollegueUtilisateur collegueUtilisateur = (this.serviceOfCollegue.loadUserByname(email));
+		return ResponseEntity.status(HttpStatus.OK).body(collegueUtilisateur);
+
 	}
 
 }

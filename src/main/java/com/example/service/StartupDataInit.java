@@ -33,7 +33,7 @@ public class StartupDataInit {
 		service.savingColleguesMethod(
 				new Collegue(UUID.randomUUID().toString(), "Marty", "Nicolas", "martynicolas@gmail.com",
 						LocalDate.of(1997, 01, 01), "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX18400141.jpg",
-						passwordEncoder.encode("pass1"), Arrays.asList("ROLE_ADMIN")));
+						passwordEncoder.encode("pass1"), Arrays.asList("ROLE_ADMIN", "ROLE_USER")));
 
 		service.savingColleguesMethod(new Collegue(UUID.randomUUID().toString(), "Boss", "Hugo", "bosshugo@gmail.com",
 				LocalDate.of(1997, 12, 12),

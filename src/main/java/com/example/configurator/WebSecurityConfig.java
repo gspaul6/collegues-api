@@ -3,9 +3,10 @@ package com.example.configurator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.http.HttpMethod;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -14,7 +15,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import com.example.filter.JWTAuthorizationFilter;
 
 //import dev.spring.security.filter.JWTAuthorizationFilter;
-
+@Configuration
+@EnableGlobalMethodSecurity(securedEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Value("${jwt.cookie}")
 	private String TOKEN_COOKIE;
@@ -47,8 +49,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.csrf().disable().authorizeRequests()
 
 				// un GET /exemples n'est pas soumise à authentification
-				.antMatchers(HttpMethod.GET, "/collegues").permitAll().antMatchers("/h2-console/**").permitAll()
-				.antMatchers("/auth").permitAll().antMatchers("/me").hasRole("ADMIN")
+
+				.antMatchers("/h2-console/**").permitAll().antMatchers("/auth").permitAll().antMatchers("/me")
+				.hasRole("USER")
 				// Les autres requêtes sont soumises à authentification
 				.anyRequest().authenticated()
 

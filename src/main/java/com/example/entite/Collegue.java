@@ -38,13 +38,13 @@ public class Collegue {
 	@OneToMany(mappedBy = "collegue")
 	private List<CommentaireCollegue> commentaire;
 
-	private String motDePasse;
+	private String motPass;
 
 	@ElementCollection(fetch = FetchType.EAGER)
 	private List<String> roles = new ArrayList<>();
 
 	public Collegue(String matricule, String nom, String prenoms, String email, LocalDate dateDeNaissance,
-			String photoUrl, String motDePasse, List<String> roles) {
+			String photoUrl, String motPass, List<String> roles) {
 		super();
 		this.matricule = matricule;
 		this.nom = nom;
@@ -52,7 +52,7 @@ public class Collegue {
 		this.email = email;
 		this.dateDeNaissance = dateDeNaissance;
 		this.photoUrl = photoUrl;
-		this.motDePasse = motDePasse;
+		this.motPass = motPass;
 		this.roles = roles;
 	}
 
@@ -195,12 +195,12 @@ public class Collegue {
 		this.photoUrl = photoUrl;
 	}
 
-	public String getMotDePasse() {
-		return motDePasse;
+	public String getMotPass() {
+		return motPass;
 	}
 
-	public void setMotDePasse(String motDePasse) {
-		this.motDePasse = motDePasse;
+	public void setMotPas(String motPass) {
+		this.motPass = motPass;
 	}
 
 	public List<String> getRoles() {
