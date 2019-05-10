@@ -45,5 +45,12 @@ public class RestResponseEntityExceptionHandler {
 	public ResponseEntity mauvaiseInfosConnexion(BadCredentialsException e) {
 		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
 	}
+	
+	@ExceptionHandler(value = { RoleInvalidException.class })
+	protected ResponseEntity<Object> roleInvalidHandler(RuntimeException ex, WebRequest request) {
+		String bodyOfResponse = "Role Invalid";
+		return ResponseEntity.status(404).body(bodyOfResponse);
+	}
+	
 
 }

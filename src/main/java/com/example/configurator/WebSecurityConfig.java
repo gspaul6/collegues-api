@@ -1,5 +1,6 @@
 package com.example.configurator;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
@@ -10,14 +11,16 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.example.filter.JWTAuthorizationFilter;
+
 //import dev.spring.security.filter.JWTAuthorizationFilter;
 
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Value("${jwt.cookie}")
 	private String TOKEN_COOKIE;
 
-	// @Autowired
-	// JWTAuthorizationFilter jwtAuthorizationFilter;
+	@Autowired
+	JWTAuthorizationFilter jwtAuthorizationFilter;
 
 	@Bean
 	public PasswordEncoder passwordEncoder() {
