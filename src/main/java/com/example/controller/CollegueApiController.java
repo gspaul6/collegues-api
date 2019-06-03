@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -21,7 +22,6 @@ import com.example.entite.ColPhotoMatricule;
 import com.example.entite.Collegue;
 import com.example.entite.CollegueDTO;
 import com.example.entite.CollegueModifier;
-import com.example.entite.CollegueUtilisateur;
 import com.example.service.CollegueService;
 import com.example.utls.DtoUtils;
 
@@ -54,6 +54,14 @@ public class CollegueApiController {
 	@GetMapping("/email")
 	public boolean searchByEmail(@RequestParam("email") String email) throws Exception {
 		return this.serviceOfCollegue.researcheParEmail(email);
+	}
+
+	@GetMapping("/emails")
+	public ResponseEntity<Object> rechercherParEmail() {
+		CollegueDTO collegue = DtoUtils.ToCollegueDTO(this.serviceOfCollegue
+				.collegueParEmail(SecurityContextHolder.getContext().getAuthentication().getName()));
+
+		return ResponseEntity.status(HttpStatus.OK).body(collegue);
 	}
 
 	@GetMapping("/all")
@@ -98,11 +106,13 @@ public class CollegueApiController {
 		return ResponseEntity.status(HttpStatus.OK).body(newCollegue);
 	}
 
-	@GetMapping("/me")
-	public ResponseEntity<Object> getUtilisateur(@RequestParam("email") String email) {
-		CollegueUtilisateur collegueUtilisateur = (this.serviceOfCollegue.loadUserByname(email));
-		return ResponseEntity.status(HttpStatus.OK).body(collegueUtilisateur);
-
-	}
-
 }
+
+// @GetMapping("/me")
+// public ResponseEntity<Object> getUtilisateur(@RequestParam("email")
+// String email) {
+// CollegueUtilisateur collegueUtilisateur =
+// (this.serviceOfCollegue.loadUserByname(email));
+// return ResponseEntity.status(HttpStatus.OK).body(collegueUtilisateur);
+//
+// }

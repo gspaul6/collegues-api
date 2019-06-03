@@ -22,9 +22,9 @@ public interface CollegueRepository extends JpaRepository<Collegue, String> {
 
 	@Query("Select c.email from Collegue c where c.email=:email")
 	String findDistinctCollegueByEmail(@Param("email") String email);
-	
+
 	@Query("Select c from Collegue c where c.email=:email")
-	Optional<Collegue> findCollegueByTheirEmail(@Param("email")String email);
+	Optional<Collegue> findCollegueByTheirEmail(@Param("email") String email);
 
 	// @Modifying
 	// @Query("update Collegue c set c.email = ?1, where c.id = ?2")

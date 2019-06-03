@@ -86,6 +86,12 @@ public class CollegueService {
 
 	}
 
+	public Collegue collegueParEmail(String email) throws EmailNotFoundException {
+		Collegue collegueFound = collegueRepository.findCollegueByTheirEmail(email)
+				.orElseThrow(() -> new EmailNotFoundException("Email non trouvé"));
+		return collegueFound;
+	}
+
 	public List<ColPhotoMatricule> researchAllCollegue() {
 		List<ColPhotoMatricule> collegueList = new ArrayList<>();
 		List<Collegue> allCols = collegueRepository.findAll();
@@ -141,6 +147,23 @@ public class CollegueService {
 		return collegueUtilisateur;
 
 	}
+
+	// public List<String> findCollegueByEmail(String email) throws Exception {
+	//
+	// Collegue collegueFound = collegueRepository.findByEmail(email)
+	// .orElseThrow(() -> new UsernameNotFoundException("Utilisateur non
+	// trouvé"));
+	// CollegueUtilisateur collegueUtilisateur =
+	// DtoUtils.toCollegueUtilisateur(collegueFound);
+	// List<String> listToReturn = new ArrayList<>();
+	//
+	// listToReturn.add(collegueFound.getMatricule());
+	// listToReturn.add(collegueFound.getNom());
+	// listToReturn.add(collegueFound.getPrenoms());
+	// listToReturn.addAll(collegueFound.getRoles());
+	// return listToReturn;
+	//
+	// }
 }
 
 // public List<Collegue> rechercherParNom(String nomRecherche) {

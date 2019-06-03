@@ -36,7 +36,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 				.orElseThrow(() -> new UsernameNotFoundException("Utilisateur non trouvé"));
 
 		// Création d'un objet User (implémentant UserDetails)
-		return new User(collegueFound.getNom(), collegueFound.getMotPass(),
+		return new User(collegueFound.getEmail(), collegueFound.getMotPass(),
 				collegueFound.getRoles().stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList()));
 
 	}

@@ -211,3 +211,173 @@
 16:59:51.759 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
 16:59:52.649 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
 16:59:53.031 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.314 seconds (JVM running for 15192.378)
+09:38:09.334 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11204 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+09:38:09.337 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+09:38:14.781 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+09:38:15.303 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 6.277 seconds (JVM running for 6.961)
+10:08:30.710 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+10:08:30.713 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+10:08:35.150 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+10:08:35.714 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 5.254 seconds (JVM running for 5.919)
+11:04:07.640 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:04:07.641 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:04:08.763 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:04:09.161 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.555 seconds (JVM running for 3335.832)
+11:04:14.574 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:04:14.574 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:04:15.394 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:04:15.770 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.241 seconds (JVM running for 3342.441)
+11:07:39.057 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:07:39.058 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:08:04.000 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:08:04.000 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:10:01.578 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:10:01.578 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:12:13.344 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:12:13.344 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:12:14.133 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:12:14.496 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.17 seconds (JVM running for 3821.167)
+11:12:36.349 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:12:36.349 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:12:36.940 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:12:37.302 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.97 seconds (JVM running for 3843.974)
+11:13:55.443 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:13:55.443 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:13:56.018 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:13:56.380 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.956 seconds (JVM running for 3923.051)
+11:17:03.628 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:17:03.628 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:17:04.267 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:17:04.625 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.015 seconds (JVM running for 4111.296)
+11:21:26.099 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:21:26.099 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:21:26.686 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:21:27.044 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.961 seconds (JVM running for 4373.715)
+11:24:09.178 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:24:09.178 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:24:10.021 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:24:10.450 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.289 seconds (JVM running for 4537.122)
+11:26:11.685 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:26:11.685 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:26:12.213 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:26:12.564 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.895 seconds (JVM running for 4659.235)
+11:26:28.261 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:26:28.262 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:26:28.784 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:26:29.156 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.912 seconds (JVM running for 4675.827)
+11:27:10.322 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:27:10.322 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:27:14.241 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:27:14.241 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:27:32.503 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:27:32.503 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:27:56.906 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:27:56.907 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:29:34.298 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:29:34.298 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:29:34.885 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:29:35.253 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.982 seconds (JVM running for 4861.924)
+11:32:07.127 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:32:07.127 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:32:07.630 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:32:07.991 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.882 seconds (JVM running for 5014.662)
+11:33:39.398 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 9804 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:33:39.398 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:33:39.907 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:33:40.263 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.881 seconds (JVM running for 5106.935)
+11:34:18.075 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:34:18.078 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:34:22.830 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:34:23.396 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 5.582 seconds (JVM running for 6.256)
+11:52:45.578 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:52:45.578 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:52:46.385 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:52:46.758 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.207 seconds (JVM running for 1109.618)
+11:57:07.749 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+11:57:07.750 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+11:57:08.506 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+11:57:08.882 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.157 seconds (JVM running for 1371.742)
+12:04:37.711 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:04:37.711 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:04:38.410 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:04:38.780 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.094 seconds (JVM running for 1821.64)
+12:05:34.055 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:05:34.055 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:05:34.706 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:05:35.098 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.064 seconds (JVM running for 1877.958)
+12:09:04.576 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:09:04.576 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:09:05.186 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:09:05.547 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.992 seconds (JVM running for 2088.407)
+12:11:17.789 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:11:17.790 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:11:18.381 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:11:18.738 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.967 seconds (JVM running for 2221.598)
+12:18:20.349 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:18:20.350 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:18:21.013 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:18:21.372 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.045 seconds (JVM running for 2644.232)
+12:31:05.191 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:31:05.192 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:31:05.772 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:31:06.130 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.958 seconds (JVM running for 3408.99)
+12:37:00.978 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:37:00.978 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:37:01.538 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:37:01.896 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.935 seconds (JVM running for 3764.756)
+15:14:50.486 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+15:14:50.486 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+15:14:51.294 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+15:14:51.659 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.199 seconds (JVM running for 13234.525)
+16:39:36.386 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+16:39:36.386 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+16:39:37.040 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+16:39:37.406 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.041 seconds (JVM running for 18320.271)
+17:33:45.877 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+17:33:45.877 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+17:33:46.716 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+17:33:47.075 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.221 seconds (JVM running for 21569.941)
+17:45:51.843 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+17:45:51.843 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+17:45:52.422 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+17:45:52.779 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 0.954 seconds (JVM running for 22295.645)
+12:00:49.529 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 2368 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:00:49.529 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:00:54.520 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:00:55.094 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 5.844 seconds (JVM running for 6.519)
+12:09:37.969 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 1328 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:09:37.969 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:09:42.264 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:11:02.185 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 2368 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:11:02.185 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:11:03.380 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:11:04.013 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.86 seconds (JVM running for 615.435)
+12:11:04.074 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 5496 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:11:04.074 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:11:08.422 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:11:22.237 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 2368 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:11:22.237 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:11:23.147 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:11:23.529 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 1.324 seconds (JVM running for 634.951)
+12:12:17.292 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 280 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:12:17.292 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:12:21.763 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+12:15:57.549 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 2204 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+12:15:57.549 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+12:16:01.893 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+16:20:07.865 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 2368 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+16:20:07.866 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+16:20:11.136 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+16:20:11.882 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 4.103 seconds (JVM running for 15563.314)
+16:21:54.847 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 1536 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+16:21:54.847 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+16:21:59.069 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+16:21:59.612 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 5.02 seconds (JVM running for 5.674)
+17:44:44.820 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 11984 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+17:44:44.836 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+17:44:50.855 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+17:44:51.386 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 6.815 seconds (JVM running for 7.706)
+09:10:12.373 [restartedMain] INFO  com.example.ColleguesApiApplication - Starting ColleguesApiApplication on DESKTOP-U3M57K9 with PID 6336 (C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api\target\classes started by gurpr in C:\Total\workspace-sts-3.8.4.RELEASE\collegues-api)
+09:10:12.373 [restartedMain] INFO  com.example.ColleguesApiApplication - No active profile set, falling back to default profiles: default
+09:10:17.217 [restartedMain] ERROR com.example.service.StartupDataInit - hello starting
+09:10:17.781 [restartedMain] INFO  com.example.ColleguesApiApplication - Started ColleguesApiApplication in 5.658 seconds (JVM running for 6.336)
